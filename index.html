@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Steganography</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Steganography Tool</h2>
+        
+        <div class="section">
+            <input type="file" id="imageLoader" accept="image/*">
+            <textarea id="textInput" placeholder="Enter secret message here..."></textarea>
+            <button id="encodeBtn">Hide Message & Download</button>
+        </div>
+
+        <hr>
+
+        <div class="section">
+            <h3>Decode Secret Message</h3>
+            <input type="file" id="decodeLoader" accept="image/*">
+            <button id="decodeBtn">Reveal Secret Message</button>
+            <p id="decodedMessage" style="font-weight: bold; color: #e11717; margin-top: 10px;"></p>
+        </div>
+
+        <canvas id="canvas" style="display:none;"></canvas>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
